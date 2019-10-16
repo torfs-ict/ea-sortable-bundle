@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Orkestra\EaSortable\Controller\SortableController:
+    tags: ['controller.service_arguments']

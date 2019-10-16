@@ -1,0 +1,12 @@
+stof_doctrine_extensions:
+  orm:
+    default:
+      sortable: true
+
+easy_admin:
+  design:
+    assets:
+      css:
+        - /bundles/orkestraeasortable/ea-sortable.css
+      js:
+        - /bundles/orkestraeasortable/ea-sortable.js

@@ -1,0 +1,2 @@
+{% set property = action.property|default('position') %}
+<div class="d-none" data-sortable="{{ url('easyadmin.sortable.sort', {property: property}) }}"></div>
