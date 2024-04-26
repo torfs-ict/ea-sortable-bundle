@@ -2,6 +2,7 @@
 
 namespace Orkestra\EaSortable;
 
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
@@ -12,6 +13,8 @@ trait SortableTrait
      * @ORM\Column(type="integer")
      * @Gedmo\SortablePosition()
      */
+    #[ORM\Column(type: Types::INTEGER)]
+    #[Gedmo\SortablePosition]
     private $position = 0;
 
     /**
